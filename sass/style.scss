@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	//list-style: none;
+	//text- decoration: none;
+}
+
+body{
+	background: whitesmoke;
+	color: #673ab7;
+	padding: 50px;
+	padding: 50px;
+
+}
+
+h1, h2, h3{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+nav{
+	ul{
+		li{
+			list-style: none;
+			display: block;
+			background: black;
+			text-align: center;
+			width: 100%;
+			height: 40px;
+			font-size: 18px;
+			padding: 10px 0px;
+			margin: 20px auto;
+		}
+		a{
+			text-decoration: none;
+			color: magenta;
+		}
+	}
+}
+
+.italianRestauran{
+	width: 100%;
+	height: auto;
+}
+
+.paragraph{
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+.imgItalian{
+	width: 100%;
+}
+
+.clearFix{
+	clear: both;
+	content: "";
+	display: block;
+}
+@media only screen and (min-width: 600px){
+
+	.banner{
+	display: block;
+	margin-bottom: 30px;
+	}
+	
+	.imgItalian{
+	width: 100%; //if you want to change the heightyou need to resieze it in photoshop//
+	margin-top: 40px;
+	}
+	
+	.paragraph{
+	margin-top: 30px;
+	padding-right: 50px;
+}
+	nav{
+		ul{
+			li{
+				display: inline;
+				margin-right: 50px;
+			}
+			a{
+				width: 150px;
+				padding: 20px;
+			}//end of anchor//
+		}//end of ul//
+	}//end of nav//
+
+	.italianRestauran{
+
+	}
+
+@for $i from 1 through 12 {
+	.col-#{$i}{
+		width: 100%/12*$i;
+		float: left;
+	}
+
+} //end of the loop//
+	
+}
+
+
+
